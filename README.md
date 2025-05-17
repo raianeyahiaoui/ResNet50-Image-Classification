@@ -1,53 +1,44 @@
 # ResNet50-Image-Classification
 Image classification using ResNet50 on the UBIRIS V2 iris dataset. This project focuses on biometric recognition by training a deep learning model to classify iris images captured under visible light conditions.
-# 🧠 ResNet50 Image Classification
 
-This repository contains an implementation of an image classification model using **ResNet50** and a custom **Convolutional Neural Network (CNN)**. The project uses **TensorFlow** and **Keras** for deep learning, applied to the **UBIRIS V2 iris dataset** for biometric recognition.
+# 🧠 ResNet50-Based Iris Image Classification Using UBIRIS V2
 
-## 🧬 Table of Contents
-- [📖 Introduction](#📖-introduction)
-- [🧰 Setup](#🧰-setup)
-- [🧪 Usage](#🧪-usage)
-- [📊 Results](#📊-results)
-- [📄 License](#📄-license)
+This repository presents a deep learning-based approach for iris image classification using the **UBIRIS V2** dataset. The project evaluates the performance of a **pre-trained ResNet50** architecture and a **custom-designed Convolutional Neural Network (CNN)** to classify iris images across **50 unique classes**.
 
-## 📖 Introduction
+## 🧪 Objective
 
-This project focuses on classifying iris images into 50 distinct classes using state-of-the-art deep learning techniques. It explores **transfer learning** with **ResNet50** and compares performance with a custom-designed **CNN**.
+The primary goal of this project is to assess the effectiveness of **transfer learning** in the domain of biometric image classification, specifically iris recognition, by comparing it with a CNN trained from scratch.
 
-The dataset used is **UBIRIS V2**, a visible-wavelength iris image dataset often used in biometric and computer vision research.
+## ⚙️ Methodology
 
-🧪 Usage
-To train the model using ResNet50:
+- **Dataset**: UBIRIS V2 (preprocessed into training and testing sets)
+- **Image Size**: 224×224 RGB
+- **Models Used**:
+  - ResNet50 (transfer learning with fine-tuning)
+  - Custom CNN (built and trained from scratch)
+- **Frameworks**: TensorFlow & Keras
 
-bash
-Copier
-Modifier
-python resnet50_train.py
-To train using the custom CNN:
+## 📈 Results
 
-bash
-Copier
-Modifier
-python custom_cnn_train.py
-Modify paths and hyperparameters as needed in the scripts.
+| Model         | Test Accuracy |
+|---------------|----------------|
+| ResNet50      | ≈ **96%**       |
+| Custom CNN    | ≈ **82%**       |
 
-📊 Results
-Training was conducted on the UBIRIS V2 dataset. Below are the achieved accuracies:
+The ResNet50 model significantly outperformed the custom CNN, highlighting the strength of transfer learning in limited-data biometric applications.
 
-🔹 ResNet50: ~92% accuracy
+## 📂 Repository Structure
 
-🔹 Custom CNN: ~85% accuracy
-## 🧰 Setup
+- `resnet50_train.py` – Training script for ResNet50
+- `custom_cnn_train.py` – Training script for custom CNN
+- `utils/` – Helper functions for preprocessing and evaluation
+- `notebooks/` – Jupyter notebooks for experimentation (if applicable)
 
-**Requirements:**
-- Python 3.x
-- TensorFlow
-- Keras
-- Matplotlib
-- Seaborn
+## 🧠 Conclusion
 
-Install dependencies using pip:
+This project demonstrates that leveraging pre-trained models such as **ResNet50** can substantially improve classification accuracy in complex biometric datasets like **UBIRIS V2**. The findings support the integration of transfer learning in iris recognition systems and contribute to the advancement of deep learning in biometric authentication.
 
-```bash
-pip install tensorflow matplotlib seaborn
+---
+
+> Developed using Python, TensorFlow, and Keras  
+> Dataset: UBIRIS V2 – https://iris.di.ubi.pt/ubiris2.html

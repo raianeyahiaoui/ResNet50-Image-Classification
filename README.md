@@ -17,6 +17,27 @@ This project focuses on classifying iris images into 50 distinct classes using s
 
 The dataset used is **UBIRIS V2**, a visible-wavelength iris image dataset often used in biometric and computer vision research.
 
+🧪 Usage
+To train the model using ResNet50:
+
+bash
+Copier
+Modifier
+python resnet50_train.py
+To train using the custom CNN:
+
+bash
+Copier
+Modifier
+python custom_cnn_train.py
+Modify paths and hyperparameters as needed in the scripts.
+
+📊 Results
+Training was conducted on the UBIRIS V2 dataset. Below are the achieved accuracies:
+
+🔹 ResNet50: ~92% accuracy
+
+🔹 Custom CNN: ~85% accuracy
 ## 🧰 Setup
 
 **Requirements:**

@@ -9,6 +9,17 @@ This repository presents a deep learning-based approach for iris image classific
 
 The primary goal of this project is to assess the effectiveness of **transfer learning** in the domain of biometric image classification, specifically iris recognition, by comparing it with a CNN trained from scratch.
 
+## 🚀 Quick Start
+
+1. Clone the repository:  
+   `git clone https://github.com/raianeyahiaoui/ResNet50-Image-Classification.git`
+
+2. Install dependencies:  
+   `pip install tensorflow matplotlib seaborn`
+
+3. Run training script:  
+   `python resnet50_train.py`
+   
 ## ⚙️ Methodology
 
 - **Dataset**: UBIRIS V2 (preprocessed into training and testing sets)
@@ -42,3 +53,30 @@ This project demonstrates that leveraging pre-trained models such as **ResNet50*
 
 > Developed using Python, TensorFlow, and Keras  
 > Dataset: UBIRIS V2 – https://iris.di.ubi.pt/ubiris2.html
+## 📈 Result 
+The following plots illustrate the training and validation accuracy and loss over the epochs:
+
+- **Accuracy Plot
+This plot shows the model's accuracy during training and validation. As seen, the training accuracy improves consistently, indicating effective learning, while the validation accuracy also shows good performance, reaching approximately 96% by the end of training.
+
+- **Loss Plot
+This plot depicts the training and validation loss over the epochs. The training loss decreases steadily, suggesting that the model is learning well, while the validation loss also decreases, reflecting good generalization to unseen data.
+
+### Accuracy Plot
+![Accuracy Plot](accuracy_plot.png)
+
+### Loss Plot
+![Loss Plot](loss_plot.png)
+
+## 📚 References
+
+- He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep Residual Learning for Image Recognition. *CVPR*.
+- UBIRIS V2 dataset: https://iris.di.ubi.pt/ubiris2.html
+
+## 📫 Contact
+
+Raiane Yahiaoui  
+Email: ikba.king2015@gmail.com 
+LinkedIn: www.linkedin.com/in/yahiaoui-raiane-253911262
+
+
